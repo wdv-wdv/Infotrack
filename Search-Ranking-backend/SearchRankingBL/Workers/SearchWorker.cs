@@ -22,7 +22,7 @@ namespace SearchRankingBL
         /// <exception cref="Exception"></exception>
         public int PerformSearch(Search search, SearchEngine searchEngine) {
 
-            var (count, error) = Scarper.Process(search, searchEngine);
+            var (count, error) = Scarper.PreformLookup(search, searchEngine);
             if (!string.IsNullOrEmpty(error))
             {
                 throw new Exception (error);

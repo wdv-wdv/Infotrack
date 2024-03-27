@@ -27,7 +27,7 @@ namespace ScarperSelenium
         ///     int count: ranging on the search result page, 0 when not found.
         ///     string? errorMessage: when browser fails
         /// </returns>
-        public (int count, string? errorMessage) Process(Search search, SearchEngine searchEngine)
+        public (int count, string? errorMessage) PreformLookup(Search search, SearchEngine searchEngine)
         {
             try
             {

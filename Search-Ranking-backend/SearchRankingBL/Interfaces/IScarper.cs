@@ -12,6 +12,6 @@ namespace SearchRankingBL
     /// </summary>
     public interface IScarper
     {
-        public (int count, string? errorMessage) Process(Search search, SearchEngine seacrhEngine);
+        public (int count, string? errorMessage) PreformLookup(Search search, SearchEngine seacrhEngine);
     }
 }

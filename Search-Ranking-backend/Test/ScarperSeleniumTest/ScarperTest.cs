@@ -36,7 +36,7 @@ namespace ScarperSeleniumTest
 
             // Act
             IScarper scarper = new Scarper(arr.logger);
-            var (count, errorMessage) = scarper.Process(search, searchEngine);
+            var (count, errorMessage) = scarper.PreformLookup(search, searchEngine);
 
             // Assert
             Assert.IsNull(errorMessage); //no errors report.
